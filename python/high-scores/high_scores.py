@@ -7,8 +7,4 @@ def personal_best(scores):
 
 
 def personal_top_three(scores):
-    a = sorted(scores, reverse=True)
-    if len(a) < 3:
-        return a
-    else:
-        return a[:3]
+    return sorted(scores, reverse=True)[:3]
